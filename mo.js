@@ -134,3 +134,19 @@ const circle = new mojs.Shape({
   duration:     800,
   repeat:       999
 }).play();
+
+
+new mojs.Shape({
+    parent:       '#newdeltainthen',
+    shape:        'rect',
+    fill:         'none',
+    stroke:       'cyan',
+    radius:       10,
+    strokeWidth:  20,
+    rotate:        { [-180] : 0 },
+  
+    duration:     600
+  }).then({
+    strokeWidth:  { 50 : 0 },
+    stroke:       { 'magenta' : 'yellow'  }
+  });
