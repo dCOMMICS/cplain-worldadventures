@@ -81,3 +81,23 @@ var circle = new mojs.Shape({
     duration:     2000,
     repeat:       999,
   }).play();
+
+
+
+  new mojs.Shape({
+    parent:     '#triangle',
+    shape:      'polygon',
+    fill:       'orange',
+    radius:     65,
+    rotate:      { [-120]: -40 },
+    x:          { [-200]: 20 },
+    y:          { [50]: -20 },
+    scaleX:     { 0 : 1.3 },
+  
+    repeat:     10,
+    duration:   800,
+    isYoyo:     true,
+    backwardEasing: 'sin.in',
+  
+    isShowEnd:  false
+  })
