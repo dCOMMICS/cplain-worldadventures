@@ -101,3 +101,14 @@ var circle = new mojs.Shape({
   
     isShowEnd:  false
   })
+
+
+  new mojs.Shape({
+    parent:       '#deltaeasing',
+    shape:        'circle',
+    scale:        { 0 : 1, easing: 'cubic.out' },
+    fill:         { 'cyan': 'yellow', easing: 'cubic.in' },
+  
+    duration:     2000,
+    repeat:       2,
+  })
