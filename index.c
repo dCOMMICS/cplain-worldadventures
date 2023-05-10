@@ -29,5 +29,33 @@ int main() {
   else {
     printf("Invalid Input");
   }
+//Question 1//
+  if(i==7)
+  {
+    printf("1) What is the Capital City of Mali?\n\n");
+
+    //Answers//
+    printf("1) Bamako\n");
+    printf("2) Los Angeles\n");
+    printf("3) Malta\n");
+    printf("4) Kinshasa\n");
+
+    printf("Enter Your Answer  :");
+
+    scanf("%d", &ans1);
+
+    if(ans1==2)
+    {
+        printf("Great Work\n");
+
+        point01=5;
+
+        printf("Total Score %d Points\n", point01);
+    }
+    else 
+    {
+        printf("Incorrect Answer Try Again");
+    }
+  }
   return 0;
 }
