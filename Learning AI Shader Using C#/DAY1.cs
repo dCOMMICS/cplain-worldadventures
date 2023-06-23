@@ -100,7 +100,7 @@ struct Child {
     int id;
     int specialValue;
 }
-
+// Dont Del
 void MyMethod(inout Child child) {
     child.id++;
 }
