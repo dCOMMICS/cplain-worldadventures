@@ -98,6 +98,7 @@ int main() {
 
 //  User input//
 
+
 #include <stdio.h>
 int main (){
   int Age; //STORES THE AGE ASSIGNED BY THE USER//
