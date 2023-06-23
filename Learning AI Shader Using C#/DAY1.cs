@@ -68,3 +68,5 @@ Shader "Custom/ApplyEffectIfKeywordIsOn"
         }
     }
 }
+
+// Day 2 Loading.
