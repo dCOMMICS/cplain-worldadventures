@@ -33,3 +33,24 @@ var button = new Button
     FlatStyle = FlatStyle.Flat,
 };
 button.FlatAppearance.BorderSize = 0;
+
+var pan = new Panel
+{
+    AutoSize = true,
+    Padding = new Padding(0, 0, 1, 1),
+    BackColor = Color.PowderBlue,
+    BorderStyle = BorderStyle.FixedSingle,
+    Tag = keyword
+};
+
+button.Click += delegate
+{
+    _keywords.Remove(pan.Controls.OfType<Label>().First().Text);
+    pan.Dispose();
+    StatusLabel.Text = $@"Removed {keyword}";
+};
+
+pan.Controls.Add(label);
+pan.Controls.Add(button);
+
+FlowLayoutPanelMain.Controls.Add(pan);
