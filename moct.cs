@@ -26,6 +26,8 @@ namespace Platform_Game_Tutorial_MOO_ICT
         {
             InitializeComponent();
         }
+
+        
         private void MainGameTimerEvent(object sender, EventArgs e)
         {
             txtScore.Text = "Score: " + score;
