@@ -37,3 +37,34 @@ public class KeywordExample : MonoBehaviour
         }
     }
 }
+
+
+
+//
+
+Shader "Custom/ApplyEffectIfKeywordIsOn"
+{
+    Properties
+    {
+        // Display a toggle in the Material's Inspector window
+            [Toggle] _Keyword ("Keyword", Float) = 0.0
+    }
+
+    SubShader
+    {
+        Pass
+        {
+            #pragma shader_feature _Keyword
+
+            fixed4 frag(v2f i) : SV_Target
+            {
+                    #if _Keyword
+                        // If _Keyword is on at build time, Unity creates a shader variant that uses the following code
+                        ApplyEffect();
+                    #endif
+            
+            // rest of shader code...
+            }
+        }
+    }
+}
