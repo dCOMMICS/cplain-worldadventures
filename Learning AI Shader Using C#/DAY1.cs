@@ -90,6 +90,7 @@ class Child : Object {
     }
 }
 
+// Sample Code
 Child child = new Child(8);
 child.MyMethod();
 
