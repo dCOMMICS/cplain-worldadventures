@@ -43,7 +43,7 @@ var pan = new Panel
     Tag = keyword
 };
 
-.
+//
 button.Click += delegate
 {
     _keywords.Remove(pan.Controls.OfType<Label>().First().Text);
