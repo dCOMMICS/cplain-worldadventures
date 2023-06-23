@@ -25,6 +25,7 @@ namespace Platform_Game_Tutorial_MOO_ICT
         int verticalSpeed = 3;
         int enemyOneSpeed = 5;
         int enemyTwoSpeed = 3;
+        
          public Form1()
         {
             InitializeComponent();
