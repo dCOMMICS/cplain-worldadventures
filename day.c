@@ -109,3 +109,5 @@ int main (){
 //AFTER A LONG TIME//
 
 //AM BACK 
+
+//day 1 after long rest
