@@ -69,4 +69,44 @@ Shader "Custom/ApplyEffectIfKeywordIsOn"
     }
 }
 
+
+shader
+
+//still on Day 1
+// Example C# code
+
+class Object {
+    int id;
+    void MyMethod() {
+        id++;
+    }
+}
+
+class Child : Object {
+    int specialValue;
+    Child(int value) {
+        id = 0;
+        specialValue = value;
+    }
+}
+
+Child child = new Child(8);
+child.MyMethod();
+
+// Example HLSL code
+
+struct Child {
+    int id;
+    int specialValue;
+}
+
+void MyMethod(inout Child child) {
+    child.id++;
+}
+
+Child child;
+child.id = 0;
+child.specialValue = 8;
+MyMethod(child);
+
 // Day 2 Loading.
