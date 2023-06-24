@@ -45,3 +45,16 @@ namespace Platform_Game_Tutorial_MOO_ICT
                 player.Left += playerSpeed;
             }
             // line 52 on source code//
+
+            if (jumping == true && force < 0)
+            {
+                jumping = false;
+            }
+            if (jumping == true)
+            {
+                jumpSpeed = -8;
+                force -= 1;
+            }
+            else
+            {
+                jumpSpeed = 10;
