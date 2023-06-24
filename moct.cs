@@ -58,3 +58,17 @@ namespace Platform_Game_Tutorial_MOO_ICT
             else
             {
                 jumpSpeed = 10;
+
+
+
+                }
+            foreach(Control x in this.Controls)
+            {
+                if (x is PictureBox)
+                {
+                    if ((string)x.Tag == "platform")
+                    {
+                        if (player.Bounds.IntersectsWith(x.Bounds))
+                        {
+                            force = 8;
+                            player.Top = x.Top - player.Height;
