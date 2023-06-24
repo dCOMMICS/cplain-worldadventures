@@ -72,3 +72,15 @@ namespace Platform_Game_Tutorial_MOO_ICT
                         {
                             force = 8;
                             player.Top = x.Top - player.Height;
+                            if ((string)x.Name == "horizontalPlatform" && goLeft == false || (string)x.Name == "horizontalPlatform" && goRight == false)
+                            {
+                                player.Left -= horizontalSpeed;
+                            }
+                        }
+                        x.BringToFront();
+                    }
+                    if ((string)x.Tag == "coin")
+                    {
+                        if (player.Bounds.IntersectsWith(x.Bounds) && x.Visible == true)
+                        {
+                            x.Visible = false;
