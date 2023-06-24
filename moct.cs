@@ -84,3 +84,18 @@ namespace Platform_Game_Tutorial_MOO_ICT
                         if (player.Bounds.IntersectsWith(x.Bounds) && x.Visible == true)
                         {
                             x.Visible = false;
+
+                              score++;
+                        }
+                    }
+                    if ((string)x.Tag == "enemy")
+                    {
+                        if (player.Bounds.IntersectsWith(x.Bounds))
+                        {
+                            gameTimer.Stop();
+                            isGameOver = true;
+                            txtScore.Text = "Score: " + score + Environment.NewLine + "You were killed in your journey!!";
+                        }
+                    }
+                }
+            }
