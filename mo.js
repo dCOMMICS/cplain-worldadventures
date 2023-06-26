@@ -152,3 +152,6 @@ new mojs.Shape({
     strokeWidth:  { 50 : 0 },
     stroke:       { 'magenta' : 'yellow'  }
   });
+
+
+  
