@@ -55,3 +55,4 @@ pan.Controls.Add(label);
 pan.Controls.Add(button);
 
 FlowLayoutPanelMain.Controls.Add(pan);
+
